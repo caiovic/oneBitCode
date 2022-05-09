@@ -1,0 +1,29 @@
+/*
+É bom passar mais de um tipo de fonte, caso o navegador não tenha a que deseja
+primariamente
+
+obs: sans-serif não é uma fonte, mas sim um estilo mais simples de texto, fazendo parte das generic-family
+*/
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 3;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* 
+  
+   font-size = tamanho da fonte
+   font-weight = peso da fonte, intensidade
+   font-weight: bold; - deixa tudo em negrito (100 ate 700 eu acho)
+   line-height: = define o espaçamento entre as linhas, como a função no word por exemplo
+   text-align: alinha o texto em uma determinada direção
+   text-decoration: decora o texto
+
+  
+ */

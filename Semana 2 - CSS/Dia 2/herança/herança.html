@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herança</title>
+    <style>
+      div {
+        color: deeppink;
+        border: 2px solid black;
+      }
+      div ul li {
+        color: darkgreen;
+      }
+
+      div ul {
+        border: inherit;
+      }
+    </style>
+    <!--
+      inherit - herdar
+    -->
+
+    <!--
+      Todas as tags dentro da <div> herdaram a cor escolhida para ela.
+       - <div> seria o pai
+       - <h1> <ul> <li> seriam os filhos
+    -->
+
+    <!--
+      Também é possivel especificar quais tags html você quer que recebam a herança, como no exemplo acima
+
+      OBS: podemos ver também o efeito cascata (prioridade no cálculo) ocorrendo.
+      somente a <div> fica (0, 0, 1)
+        e a <div> <ul> <li> (0, 0, 3)
+    -->
+  </head>
+  <body>
+    <div>
+      <h1>Planetas</h1>
+      <ul>
+        <li>Terra</li>
+        <li>Marte</li>
+        <li>Júpiter</li>
+      </ul>
+    </div>
+  </body>
+</html>

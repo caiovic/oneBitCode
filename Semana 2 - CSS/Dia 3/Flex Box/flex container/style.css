@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.flex-container {
+  box-sizing: box-border;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  /*column-gap: 10px;*/
+  gap: 10px;
+  /*flex-wrap: wrap-reverse;*/
+  /*row-gap: 10px;*/
+  /*flex-direction: row-reverse;*/
+  /*flex-flow: column-reverse wrap-reverse;*/
+  /*align-items: center;*/
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  background-color: #ff0044;
+  width: 400px;
+}

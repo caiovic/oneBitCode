@@ -1,0 +1,23 @@
+/*class - pode ser usado em mais de um*/
+
+.orange-text {
+  color: orange;
+}
+
+.big-text {
+  font-size: 40px;
+}
+
+/*id - usado apenas em um e não pode se repetir*/
+
+#europa-text {
+  font-size: 25px;
+  color: pink;
+}
+
+/*nome da tag específica - pode-se usar também o nome da tag em si, porém todas excesso as marcadas com
+class e id mudariam (Caso esses seletores tenham sido modificados no css, header ou inline)*/
+
+li {
+  color: gray;
+}

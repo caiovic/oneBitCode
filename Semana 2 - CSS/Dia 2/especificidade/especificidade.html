@@ -1,0 +1,27 @@
+<!--
+
+  é sobre a relevância no CSS, basicamente caso você declare de formas diferentes a mesma cor pra um mesmo
+  local, será decidida qual a que possui prioridade
+  
+  no VS code, pasando o mouse por cima da declaração podemos ver os números  [0, 0, 0] desta maneira ou assim
+  [0, 0, 0, 0], e, quanto mais para a esquerda, mais forte o elemento é
+
+  tabela: 
+
+Elemento	                            Valor
+--------------------------------------------------
+Estilo In-line                       | 1000
+Id	                                 | 100
+classes, pseudo-classes e atributos	 | 10
+HTML Tags	                           | 1
+
+
+se juntarmos uma ig e uma tag html, o valor ficaria [1, 0, 1]
+
+exemplo:
+--------------
+#container p {
+
+}
+--------------
+-->

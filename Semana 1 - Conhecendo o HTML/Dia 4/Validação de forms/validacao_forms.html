@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validação forms</title>
+  </head>
+  <body>
+    <h3>Encontre no Google</h3>
+    <form action="https://google.com/search">
+      <label for="q">O que deseja pesquisar no google?</label>
+      <input type="Text" id="q" name="q" placeholder="Pesquise aqui" required />
+      <input type="submit" value="Pesquisar" />
+    </form>
+
+    <h3>Encontre no Google</h3>
+    <form action="https://google.com/search">
+      <label for="q">O que deseja pesquisar no google?</label>
+      <input
+        type="number"
+        id="q"
+        name="q"
+        placeholder="Pesquise aqui"
+        min="10"
+        max="12"
+      />
+      <input type="submit" value="Pesquisar" />
+    </form>
+
+    <h3>Encontre no Google</h3>
+    <form action="https://google.com/search">
+      <label for="q">O que deseja pesquisar no google?</label>
+      <input
+        type="email"
+        id="q"
+        name="q"
+        placeholder="Pesquise aqui"
+        required
+      />
+      <input type="submit" value="Pesquisar" />
+    </form>
+  </body>
+</html>
+
+<!--
+  required = não permite que avance a página sem que o campo de digitação estaja preenchido
+
+  min e max = definem um máximo ou minimo de caracteres ou números 
+
+  type email = só aceita textos de email
+-->

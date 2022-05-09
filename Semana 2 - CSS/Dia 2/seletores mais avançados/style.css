@@ -1,0 +1,55 @@
+/* 
+
+* - quando usado é aplicado a todos os elementos da página associada, porém não é muito usado
+
+* {
+  border: 2px solid;
+}
+
+
+*/
+
+/* Seletor de descendência - todas as tags "a" dentro de "li" serão modificados, independente se "a" estiver
+dentro de outra tag, como "div"
+
+li a {
+  color: red;
+}
+
+*/
+
+/* Seletor filho - semelhante ao seletor de descendência, porém somente quem é filho da tag
+receberá a mudança */
+
+li > a {
+  color: red;
+}
+
+/* Seletor adjascente - é quando você quer estilizar algo que venha logo em seguida ao que
+foi dito, como no exemplo abaixo (apenas o h4 recebe modificação por estar logo em seguida do h1, porém
+caso exista outra tag entre os dois, será perdida a modificação)*/
+
+h1 + h4 {
+  border: 2px dashed;
+}
+
+/*Seletor de atributo - seleciona tudo aqui que tiver o atributo selecionado e modifica*/
+
+ul li div a[href='/recibo'] {
+  border: 2px solid;
+}
+
+/*Pseudo-classes - é um seletor que consegue ser mais específico na hora de selecionar, como por
+exemplo o escrito a baixo, que deixa o tamanho apenas dos segundos elementos das listas com tamanho
+diferente dos demais*/
+
+li:nth-of-type(2) {
+  font-size: 25px;
+}
+
+/*  li:nth-of-type(odd) {
+  font-size: 25px;
+}
+
+aplicaria em todos os números impares
+*/
